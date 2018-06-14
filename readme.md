@@ -1,5 +1,7 @@
 # Multirequest express midelware
 
+### Travis CI [![Build Status](https://travis-ci.org/BogdanGeraymovich/multi-request.svg?branch=master)](https://travis-ci.org/BogdanGeraymovich/multi-request)
+
 ## How to use
 
 ### Setup routing
