@@ -1,5 +1,5 @@
 {
-  "name": "multi-request",
+  "name": "multi-request-json",
   "version": "1.0.0",
   "description": "Api handler for marging requests",
   "main": "dist/index.js",
@@ -25,6 +25,9 @@
     "node-mocks-http": "^1.7.0",
     "sinon": "^6.0.0"
   },
-  "author": "Bogdan Geraymovich",
+  "author": {
+    "name": "Bogdan Geraymovich",
+    "email": "bgeraymovich@gmail.com"
+  },
   "license": "ISC"
 }
