@@ -4,7 +4,6 @@ import MultiJsonStream from './MultiJsonStream';
 import { PassThrough } from 'stream';
 import request from 'request';
 
-
 const createUrlMapping = (query, baseUrl) => {
   const mapping = {};
 
@@ -33,14 +32,28 @@ const startStreams = (urls) => {
     return streams;
 };
 
+const handleError = (error, res) => {
+  res.status(400).send({ error })
+
+};
+
 export default (baseUrl) => (req, res, next) => {
   const { query } = req;
-  const resUrls = createUrlMapping(query, baseUrl);
-  const streams = startStreams(resUrls);
-  const result = new MultiJsonStream(streams);
 
-  res.contentType('application/json');
+  if (!_.size(query)) {
+    handleError('Missing query params!', res);
+  }
 
-  result.pipe(res);
-  next();
+  try {
+    const resUrls = createUrlMapping(query, baseUrl);
+    const streams = startStreams(resUrls);
+    const result = new MultiJsonStream(streams);
+
+    res.contentType('application/json');
+
+    result.pipe(res);
+    next();
+  } catch (error) {
+    handleError(error, res);
+  }
 };
