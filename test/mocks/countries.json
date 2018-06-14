@@ -1,0 +1,47 @@
+[
+  {
+    "_id": 1,
+    "name": "Brazil",
+    "language": "Bulgarian",
+    "latitude": -28.3031653,
+    "longlitude": -49.3450112,
+    "country_code": "BR",
+    "timezone": "America/Sao_Paulo"
+  },
+  {
+    "_id": 2,
+    "name": "Albania",
+    "language": "Filipino",
+    "latitude": "41.45472",
+    "longlitude": "20.02556",
+    "country_code": "AL",
+    "timezone": "Europe/Tirane"
+  },
+  {
+    "_id": 3,
+    "name": "Poland",
+    "language": "Bulgarian",
+    "latitude": 54.7180477,
+    "longlitude": 18.4086339,
+    "country_code": "PL",
+    "timezone": "Europe/Warsaw"
+  },
+  {
+    "_id": 4,
+    "name": "United States",
+    "language": "Malayalam",
+    "latitude": 42.3662435,
+    "longlitude": -83.3270994,
+    "country_code": "US",
+    "timezone": "America/New_York"
+  },
+  {
+    "_id": 5,
+    "name": "French Polynesia",
+    "language": "Marathi",
+    "latitude": -17.6509195,
+    "longlitude": -149.4260421,
+    "country_code": "PF",
+    "timezone": "Pacific/Tahiti"
+  }
+]

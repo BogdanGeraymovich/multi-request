@@ -1,0 +1,62 @@
+[
+  {
+    "_id": 1,
+    "first_name": "Huey",
+    "last_name": "Bewshaw",
+    "email": "hbewshaw0@oracle.com",
+    "gender": "Male",
+    "ip_address": "185.94.247.26",
+    "country": "Canada",
+    "city": "Smiths Falls",
+    "balance": "$6.39",
+    "currency": "CAD"
+  },
+  {
+    "_id": 2,
+    "first_name": "Alphonso",
+    "last_name": "Haylock",
+    "email": "ahaylock1@nationalgeographic.com",
+    "gender": "Male",
+    "ip_address": "47.173.12.209",
+    "country": "Indonesia",
+    "city": "Culeng",
+    "balance": "$3.64",
+    "currency": "_idR"
+  },
+  {
+    "_id": 3,
+    "first_name": "Olav",
+    "last_name": "Rowley",
+    "email": "orowley2@networkadvertising.org",
+    "gender": "Male",
+    "ip_address": "154.75.207.217",
+    "country": "Greece",
+    "city": "Maroúsi",
+    "balance": "$2.77",
+    "currency": "EUR"
+  },
+  {
+    "_id": 4,
+    "first_name": "Meir",
+    "last_name": "Baison",
+    "email": "mbaison3@slashdot.org",
+    "gender": "Male",
+    "ip_address": "25.148.208.75",
+    "country": "Portugal",
+    "city": "Seroa",
+    "balance": "$8.86",
+    "currency": "EUR"
+  },
+  {
+    "_id": 5,
+    "first_name": "Isiahi",
+    "last_name": "Gallichiccio",
+    "email": "igallichiccio4@cmu.edu",
+    "gender": "Male",
+    "ip_address": "136.120.81.55",
+    "country": "United States",
+    "city": "Jamaica",
+    "balance": "$5.28",
+    "currency": "USD"
+  }
+]
