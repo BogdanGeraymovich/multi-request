@@ -1,6 +1,6 @@
 {
   "name": "multi-request-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Api handler for marging requests",
   "main": "dist/index.js",
   "scripts": {
