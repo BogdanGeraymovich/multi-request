@@ -4,7 +4,8 @@ import { Readable } from 'stream';
 export default class MultiJsonStreamM extends Readable {
 
   constructor(streams, options = {}) {
-    Object.assign({}, options, { objectMode: true, highWaterMark: 32 });
+    options.objectMode = true;
+    options.highWaterMark = 32;
     
     super(options);
     this._streams = streams;
@@ -96,15 +97,18 @@ export default class MultiJsonStreamM extends Readable {
     stream.src.on('readable', () => {
       this._reading();
     });
-    stream.src.once('end', () => {
-      this._currentStream = null;
-      if (_.size(this._streams)) {
-        this._pushJsonSeparator();
-      } else {
-        this._pushJsonEnd();
-      }
-      this._nextStream();
-    });
+
+    stream.src.once('end', this._onceEnd);
+  }
+
+  _onceEnd = () => {
+    this._currentStream = null;
+    if (_.size(this._streams)) {
+      this._pushJsonSeparator();
+    } else {
+      this._pushJsonEnd();
+    }
+    this._nextStream();
   }
 
 };
