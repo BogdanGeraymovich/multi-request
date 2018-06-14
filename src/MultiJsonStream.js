@@ -98,10 +98,10 @@ export default class MultiJsonStreamM extends Readable {
       this._reading();
     });
 
-    stream.src.once('end', this._onceEnd);
+    stream.src.once('end', this._onceEnd.bind(this));
   }
 
-  _onceEnd = () => {
+  _onceEnd() {
     this._currentStream = null;
     if (_.size(this._streams)) {
       this._pushJsonSeparator();
