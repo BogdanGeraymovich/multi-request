@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '8'
+install:
+- npm install
+script:
+- npm run lint
+- npm run test
+deploy:
+  provider: npm
+  email: bgeraymovich@gmail.com
+  on:
+    branch: master
+  api_key:
+    secure: zFCMWhtHaIwjtWcnR4JNevpdg+fnh9BHZFwACketax9sJdt5G9I9rMlShbzEQJ8uNiMMwCybYNm/wFT+YbEPdzf+DObd7NalX2SQPFr0JiXy4KjqGgMCnsgOvqKvgLBgcNT9U09W3ILrxXTJcUTbqSuW6aOQsZL1zifqrEBgzyozKJVjgI0ZbiL2M6D9Dv3C8Q4LF1HHMWzSQDMsfZx+2wwy0O5x6NmXq0meIhybnxtmwQT8nVmGv0HOOTrc5Ma3NibomYpnxaJr9vGTO2aBA0D4fQatKVpCa550SxWl7pl5krNXFUjofCn0t7vPlDmCF2VLVgXX33Om+XuzXQf3BDmaOWMXe4sDOeICck6T5TjAHwRguiakR2Ria+BwCHMEuE6rduigOFOM4GvbHrCUmPYL1t77X+BfGc5JlGzHTv2pWhHGT+wn7YJtU1zRcpF9n1rIE42kL2iPgU8MKtqLnpMzfMhxszIcrHW3qU9JZHWlyHFkDFvYrG/NC9xsQV/fcIc2CwhwzKbs23cQUpP61hwycqcgTQwdIleJkOd+hmSA8zxjyUnpGrajOn4EBJLGRwdsrVYmOAN8viY+eRPIhlBpqsl0h88BQMq6P0MLw8l7xv5/SWt00cedfJwnFseHHO3u0/cRC8JfbbJOHJ7BH45hvZwWXUr7v3+ZGde5VKY=
