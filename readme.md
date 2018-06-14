@@ -6,7 +6,10 @@
 
 ### Setup routing
 ```javascript
-app.get(SOME_ENDPOINT, multirequest(APPLICATION_DOMAIN));
+const multirequestJson = require('multirequest-json');
+const multirequest = multirequestJson(APP_DOMAIN)
+
+app.get(SOME_ENDPOINT, multirequest);
 ```
 
 
